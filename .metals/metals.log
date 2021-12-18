@@ -1,0 +1,220 @@
+[0m2021.12.18 15:06:33 INFO  Started: Metals version 0.10.9 in workspace 'C:\msys64\home\Bert\projects\scala-gradle-example' for client Visual Studio Code 1.63.2.[0m
+[0m2021.12.18 15:06:34 INFO  time: initialize in 1.02s[0m
+[0m2021.12.18 15:06:35 WARN  Build server is not auto-connectable.[0m
+[0m2021.12.18 15:06:35 WARN  no build tool detected in workspace 'C:\msys64\home\Bert\projects\scala-gradle-example'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.12.18 15:07:05 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:07:07 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.12.18 15:07:09 INFO  time: code lens generation in 3.8s[0m
+[0m2021.12.18 15:07:47 WARN  no build tool detected in workspace 'C:\msys64\home\Bert\projects\scala-gradle-example'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Dec 18, 2021 3:09:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.12.18 15:12:12 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:12:12 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:12:12 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:12:14 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:12:15 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+Dec 18, 2021 3:12:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 18, 2021 3:12:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 36
+[0m2021.12.18 15:12:26 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:12:55 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:12:55 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:19:57 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:20:01 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:20:38 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:21:02 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:21:03 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:21:11 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:21:11 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:21:13 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:21:49 WARN  no build tool detected in workspace 'C:\msys64\home\Bert\projects\scala-gradle-example'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.12.18 15:22:04 INFO  shutting down Metals[0m
+[0m2021.12.18 15:44:17 INFO  Started: Metals version 0.10.9 in workspace 'C:\msys64\home\Bert\projects\scala-gradle-example' for client Visual Studio Code 1.63.2.[0m
+[0m2021.12.18 15:44:18 INFO  time: initialize in 1.61s[0m
+[0m2021.12.18 15:44:19 WARN  Build server is not auto-connectable.[0m
+[0m2021.12.18 15:44:19 WARN  no build tool detected in workspace 'C:\msys64\home\Bert\projects\scala-gradle-example'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.12.18 15:44:19 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\app\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:44:22 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.12.18 15:44:24 INFO  time: code lens generation in 4.09s[0m
+[0m2021.12.18 15:46:35 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:47:18 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:47:20 WARN  no build target for: C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala[0m
+[0m2021.12.18 15:47:27 INFO  running 'C:\msys64\home\Bert\projects\scala-gradle-example\gradlew.bat --console=plain --init-script C:\Users\Bert\AppData\Local\Temp\metals8665206329589769749\init-script.gradle bloopInstall'[0m
+[0m2021.12.18 15:47:31 INFO  > Task :configureBloopInstall[0m
+[0m2021.12.18 15:47:31 INFO  > Task :bloopInstall[0m
+[0m2021.12.18 15:47:31 INFO  [0m
+[0m2021.12.18 15:47:31 INFO  Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.[0m
+[0m2021.12.18 15:47:31 INFO  [0m
+[0m2021.12.18 15:47:31 INFO  You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.[0m
+[0m2021.12.18 15:47:31 INFO  [0m
+[0m2021.12.18 15:47:31 INFO  See https://docs.gradle.org/7.3.2/userguide/command_line_interface.html#sec:command_line_warnings[0m
+[0m2021.12.18 15:47:31 INFO  [0m
+[0m2021.12.18 15:47:31 INFO  BUILD SUCCESSFUL in 4s[0m
+[0m2021.12.18 15:47:31 INFO  2 actionable tasks: 2 executed[0m
+[0m2021.12.18 15:47:31 INFO  time: ran 'gradle bloopInstall' in 4.25s[0m
+[0m2021.12.18 15:47:31 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 29369'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.11...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading 2 projects from 'c:\msys64\home\Bert\projects\scala-gradle-example\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example.json'
+[0m[32m[D][0m Loading project from 'c:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:3.1.0.
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.3\527fece4f23a457070a36c371a26d6c0208e1c3\jackson-annotations-2.2.3.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.9.8\f5a654e4675769c716e5b387830d19b501ca191\jackson-core-2.9.8.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.3\3ae380888029daefb91d3ecdca3a37d8cb92bc9\jackson-databind-2.2.3.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.dataformat\jackson-dataformat-yaml\2.9.8\a1c807329eb0c75976aeb5961a506b3516ffeae3\jackson-dataformat-yaml-2.9.8.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.7.0\dbb5e9230a91f2a6d011096c2b9c10a5a6e5f7f2\protobuf-java-3.7.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-anchorlink\0.42.12\afe70dca51a56e11223fef50e2cc341575d61553\flexmark-ext-anchorlink-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-autolink\0.42.12\2ab3a1f43ab2085dc91d43215911979277f6f59b\flexmark-ext-autolink-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-emoji\0.42.12\f0af5fc53c79f63e03c2d49f79550ee486999bb3\flexmark-ext-emoji-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-gfm-strikethrough\0.42.12\7d74e9e5f0af7cd3450d8c5cc6a0091ca4e3889e\flexmark-ext-gfm-strikethrough-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-gfm-tables\0.42.12\f5240d6c0cf545c043c4ff85d9901b16d63b2e5f\flexmark-ext-gfm-tables-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-gfm-tasklist\0.42.12\bdc5f0b4eaeb518433105c7be7da0c36e8bc7ad1\flexmark-ext-gfm-tasklist-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-ins\0.42.12\757ece03a334461467eecc53a5a444e8229e4ae6\flexmark-ext-ins-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-superscript\0.42.12\931585a8a1b984c7a9c516c133503231178fcd0d\flexmark-ext-superscript-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-tables\0.42.12\1c7b0753b89929839e174623b572a5fe5a5d4f4b\flexmark-ext-tables-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-wikilink\0.42.12\4925281a6b0ecd85abf1ec69b24a66ab7fe8fc13\flexmark-ext-wikilink-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-ext-yaml-front-matter\0.42.12\1d1dc4fc06640b822f5d494fedc50f9084bcb4cb\flexmark-ext-yaml-front-matter-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-formatter\0.42.12\4e59a7db95b222ea7b3d9232538225e13fd49361\flexmark-formatter-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-html-parser\0.42.12\b38f21a54c0ff7382bceb0f9eb8e75ec577692de\flexmark-html-parser-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-jira-converter\0.42.12\5d5ded184937a872bf0be65418785be55ba52df5\flexmark-jira-converter-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark-util\0.42.12\d138401b9ab2a32f15f48705257bef18baeab5d5\flexmark-util-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\com.vladsch.flexmark\flexmark\0.42.12\154f847d06d0b153d670a9a9bd78d0d573b24af3\flexmark-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\5.3.1\6eb9d07456c56b9c2560722e90382252f0f98405\jna-5.3.1.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\nl.big-o\liqp\0.6.7\25981e683f3d169376da97dcf5e29914ffe04f75\liqp-0.6.7.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.antlr\ST4\4.0.7\c013c5d7365477500eee744b65257c72f06e5ee\ST4-4.0.7.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.antlr\antlr-runtime\3.5.1\687cc3df4cf76f7161f83a64a3e8187e3ce9d022\antlr-runtime-3.5.1.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.antlr\antlr\3.5.1\241595653f0567bc615b2667c4ef9187e2365043\antlr-3.5.1.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.jline\jline-reader\3.19.0\645d72953711ee4e61705bc5e576fdd1f22c087\jline-reader-3.19.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.jline\jline-terminal-jna\3.19.0\c9f9071612424157ca3d5a774a42f2c9b44c10ef\jline-terminal-jna-3.19.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.jline\jline-terminal\3.19.0\d4a75a8be7490c8529c029d6baa59e838f45f22e\jline-terminal-3.19.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.13.1\f9577f3732bb7caa4fee8aba5053158f4010c118\jsoup-1.13.1.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.nibor.autolink\autolink\0.6.0\3986d016a14e8c81afeec752f19af29b20e8367b\autolink-0.6.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-asm\9.1.0-scala-1\90aaa7fb03763340aedabe0caddda89e46d7842c\scala-asm-9.1.0-scala-1.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.13.6\ed7a2f528c7389ea65746c22a01031613d98ab3d\scala-library-2.13.6.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala3-compiler_3\3.1.0\5666f3d876db2b34a3c70dc1c377fbb56b7c3f03\scala3-compiler_3-3.1.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala3-interfaces\3.1.0\e0f6a2122e687314d7601ae4ce08a0075d073306\scala3-interfaces-3.1.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala3-library_3\3.1.0\c04dbffc2e8eb159dcc31e9db3fb2618de13cf0d\scala3-library_3-3.1.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala3-sbt-bridge\3.1.0\c2313ea18600e93c0ba415e52304b9d42125bc7f\scala3-sbt-bridge-3.1.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala3-tasty-inspector_3\3.1.0\9608e41862b53297d9480520e77e2c7466f5e335\scala3-tasty-inspector_3-3.1.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-lang\scaladoc_3\3.1.0\4e735270f9294b262662e459f77aaa36f7dbdba5\scaladoc_3-3.1.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-lang\tasty-core_3\3.1.0\b4bdeb64cef40d6e35cc39d758ff11796da8d91f\tasty-core_3-3.1.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-sbt\compiler-interface\1.3.5\1f7379ff56b1795b523838cd06ff24272104c380\compiler-interface-1.3.5.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.scala-sbt\util-interface\1.3.0\edc7556e112da142bf7e9ead1440d024fd3314c4\util-interface-1.3.0.jar
+[0m[32m[D][0m   => C:\Users\Bert\.gradle\caches\modules-2\files-2.1\org.yaml\snakeyaml\1.23\ec62d74fe50689c28c0ff5b35d3aebcaa8b5be68\snakeyaml-1.23.jar
+[0m[32m[D][0m Missing analysis file for project 'scala-gradle-example-test'
+[0m[32m[D][0m Missing analysis file for project 'scala-gradle-example'
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:29369...
+The server is listening for incoming connections at tcp://127.0.0.1:29369...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.12.18 15:47:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Bert\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.12.18 15:47:35 INFO  time: Connected to build server in 3.97s[0m
+[0m2021.12.18 15:47:35 INFO  Connected to Build server: Bloop v1.4.11[0m
+[0m2021.12.18 15:47:38 INFO  time: indexed workspace in 2.22s[0m
+[0m2021.12.18 15:47:39 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.12.18 15:48:11 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:48:13 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:48:13 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:48:13 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:48:15 INFO  time: compiled scala-gradle-example in 3.6s[0m
+[0m2021.12.18 15:49:16 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:49:21 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:49:21 INFO  time: compiled scala-gradle-example in 0.67s[0m
+[0m2021.12.18 15:49:22 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:49:26 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:49:26 INFO  time: compiled scala-gradle-example in 0.51s[0m
+[0m2021.12.18 15:49:35 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:49:40 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:49:42 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:49:42 INFO  time: compiled scala-gradle-example in 0.59s[0m
+[0m2021.12.18 15:49:43 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:49:46 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:49:46 INFO  time: compiled scala-gradle-example in 0.49s[0m
+[0m2021.12.18 15:49:59 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:49:59 INFO  time: compiled scala-gradle-example in 0.19s[0m
+[0m2021.12.18 15:50:30 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:50:33 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:50:33 INFO  time: compiled scala-gradle-example in 0.15s[0m
+[0m2021.12.18 15:50:34 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:50:38 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:50:38 INFO  time: compiled scala-gradle-example in 0.11s[0m
+[0m2021.12.18 15:50:41 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:50:43 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:50:43 INFO  time: compiled scala-gradle-example in 0.42s[0m
+[0m2021.12.18 15:50:46 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:50:50 ERROR code navigation does not work for the file 'C:\msys64\home\Bert\projects\scala-gradle-example\src\main\scala\scala\gradle\example\App.scala' because the SemanticDB file 'C:\msys64\home\Bert\projects\scala-gradle-example\.bloop\scala-gradle-example\build\bloop-bsp-clients-classes\classes-Metals-Ujx_NBQ8TqiJRfcMmwLtMw==\META-INF\semanticdb\src\main\scala\scala\gradle\example\App.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.12.18 15:50:56 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:50:56 INFO  time: compiled scala-gradle-example in 0.53s[0m
+[0m2021.12.18 15:53:43 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:53:43 INFO  time: compiled scala-gradle-example in 92ms[0m
+[0m2021.12.18 15:53:45 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:53:45 INFO  time: compiled scala-gradle-example in 0.2s[0m
+[0m2021.12.18 15:53:50 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:53:50 INFO  time: compiled scala-gradle-example in 0.19s[0m
+[0m2021.12.18 15:56:15 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:56:15 INFO  time: compiled scala-gradle-example in 0.79s[0m
+[0m2021.12.18 15:57:35 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:57:35 INFO  time: compiled scala-gradle-example in 0.22s[0m
+[0m2021.12.18 15:58:29 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:29 INFO  time: compiled scala-gradle-example in 0.25s[0m
+[0m2021.12.18 15:58:29 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:29 INFO  time: compiled scala-gradle-example in 0.21s[0m
+[0m2021.12.18 15:58:42 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:42 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:42 INFO  time: compiled scala-gradle-example in 0.11s[0m
+[0m2021.12.18 15:58:42 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:42 INFO  time: compiled scala-gradle-example in 0.17s[0m
+[0m2021.12.18 15:58:42 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:43 INFO  time: compiled scala-gradle-example in 0.18s[0m
+[0m2021.12.18 15:58:44 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:44 INFO  time: compiled scala-gradle-example in 0.17s[0m
+[0m2021.12.18 15:58:44 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:44 INFO  time: compiled scala-gradle-example in 0.17s[0m
+[0m2021.12.18 15:58:44 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:44 INFO  time: compiled scala-gradle-example in 0.16s[0m
+[0m2021.12.18 15:58:45 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:45 INFO  time: compiled scala-gradle-example in 0.15s[0m
+[0m2021.12.18 15:58:45 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:45 INFO  time: compiled scala-gradle-example in 0.16s[0m
+[0m2021.12.18 15:58:47 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:47 INFO  time: compiled scala-gradle-example in 0.14s[0m
+[0m2021.12.18 15:58:50 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:50 INFO  time: compiled scala-gradle-example in 0.14s[0m
+[0m2021.12.18 15:58:50 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:50 INFO  time: compiled scala-gradle-example in 0.15s[0m
+[0m2021.12.18 15:58:50 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:50 INFO  time: compiled scala-gradle-example in 0.17s[0m
+[0m2021.12.18 15:58:50 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:58:50 INFO  time: compiled scala-gradle-example in 0.19s[0m
+Dec 18, 2021 3:58:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 482
+[0m2021.12.18 15:59:26 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:59:26 INFO  time: compiled scala-gradle-example in 0.15s[0m
+[0m2021.12.18 15:59:26 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:59:26 INFO  time: compiled scala-gradle-example in 0.14s[0m
+[0m2021.12.18 15:59:27 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:59:27 INFO  time: compiled scala-gradle-example in 0.14s[0m
+[0m2021.12.18 15:59:27 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:59:27 INFO  time: compiled scala-gradle-example in 0.15s[0m
+[0m2021.12.18 15:59:27 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:59:27 INFO  time: compiled scala-gradle-example in 0.15s[0m
+[0m2021.12.18 15:59:27 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:59:27 INFO  time: compiled scala-gradle-example in 0.12s[0m
+[0m2021.12.18 15:59:27 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:59:27 INFO  time: compiled scala-gradle-example in 0.13s[0m
+[0m2021.12.18 15:59:28 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:59:28 INFO  time: compiled scala-gradle-example in 0.14s[0m
+[0m2021.12.18 15:59:28 INFO  compiling scala-gradle-example (1 scala source)[0m
+[0m2021.12.18 15:59:28 INFO  time: compiled scala-gradle-example in 0.17s[0m

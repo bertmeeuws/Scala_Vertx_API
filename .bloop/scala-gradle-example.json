@@ -1,0 +1,872 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "scala-gradle-example",
+        "directory": "C:\\msys64\\home\\Bert\\projects\\scala-gradle-example",
+        "workspaceDir": "C:\\msys64\\home\\Bert\\projects\\scala-gradle-example",
+        "sources": [
+            "C:\\msys64\\home\\Bert\\projects\\scala-gradle-example\\src\\main\\java",
+            "C:\\msys64\\home\\Bert\\projects\\scala-gradle-example\\src\\main\\scala"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala3-library_3\\3.1.0\\c04dbffc2e8eb159dcc31e9db3fb2618de13cf0d\\scala3-library_3-3.1.0.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-lang-scala_2.13\\4.2.0-SNAPSHOT\\560492e1129fd6d4e3d9e0c377dcf664348e255e\\vertx-lang-scala_2.13-4.2.0-SNAPSHOT.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-web\\4.2.1\\7cd609a82fcb761c56f9991c17f2136ba01d0f2f\\vertx-web-4.2.1.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-web-common\\4.2.1\\ba45de6049914741bbcf8eb41c205f7904fd8441\\vertx-web-common-4.2.1.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-auth-common\\4.2.1\\bc2a717e29d9dc521f64f066a2508caaa22c12a7\\vertx-auth-common-4.2.1.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-bridge-common\\4.2.1\\fff4e6d13a70bf9f11566a494b0f8be6b1c45c93\\vertx-bridge-common-4.2.1.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-core\\4.2.1\\ac96fe7ea3a2c0d4d1a0b1d9fe8922e0668d655\\vertx-core-4.2.1.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-databind\\2.13.0\\889672a1721d6d85b2834fcd29d3fda92c8c8891\\jackson-databind-2.13.0.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-core\\2.13.0\\e957ec5442966e69cef543927bdc80e5426968bb\\jackson-core-2.13.0.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-annotations\\2.13.0\\15be89db6609bd6fda3dc309bacf0318a312c03f\\jackson-annotations-2.13.0.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-reflect\\2.13.6\\bb523e56c63746a5752dece28fcd702c54fd3a11\\scala-reflect-2.13.6.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-library\\2.13.6\\ed7a2f528c7389ea65746c22a01031613d98ab3d\\scala-library-2.13.6.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler-proxy\\4.1.69.Final\\a3f0750489895740ffbf934504c8a5d86aa75ed3\\netty-handler-proxy-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http2\\4.1.69.Final\\cfd4423c9d19683a6bf37e235830e73ec2f75ec1\\netty-codec-http2-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http\\4.1.69.Final\\702c6104a716ca9dc8eec6f4459733fdfcbe1959\\netty-codec-http-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver-dns\\4.1.69.Final\\a70c5df588cdafda8974db53de3e6eece164d99f\\netty-resolver-dns-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler\\4.1.69.Final\\73e932059ce8881094cedcfe4a92b8391ffa7b1b\\netty-handler-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-socks\\4.1.69.Final\\d09453d168d4b941ae5e1fd0a68f64fb425ba592\\netty-codec-socks-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-dns\\4.1.69.Final\\b232161d2077733086d5a9f496bc6b89563c46f6\\netty-codec-dns-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec\\4.1.69.Final\\617ecaee8bcb3874234e8c0832843ebbc9e9dcc9\\netty-codec-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport\\4.1.69.Final\\228e5318012edb93138005ebe896b5dd91d4b47d\\netty-transport-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-buffer\\4.1.69.Final\\c87da90e422b331ecd1e157ca77e5300348b6d0d\\netty-buffer-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver\\4.1.69.Final\\d4e7b1b8c1e5aeaf41877906b90762f1e0151902\\netty-resolver-4.1.69.Final.jar",
+            "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-common\\4.1.69.Final\\810e0649787c4930a8e699d68eb8519df2560dd0\\netty-common-4.1.69.Final.jar"
+        ],
+        "out": "C:\\msys64\\home\\Bert\\projects\\scala-gradle-example\\.bloop\\scala-gradle-example\\build",
+        "classesDir": "C:\\msys64\\home\\Bert\\projects\\scala-gradle-example\\.bloop\\scala-gradle-example\\build\\classes",
+        "resources": [
+            "C:\\msys64\\home\\Bert\\projects\\scala-gradle-example\\src\\main\\resources"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "3.1.0",
+            "options": [
+                "-deprecation",
+                "-unchecked"
+            ],
+            "jars": [
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scaladoc_3\\3.1.0\\4e735270f9294b262662e459f77aaa36f7dbdba5\\scaladoc_3-3.1.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala3-tasty-inspector_3\\3.1.0\\9608e41862b53297d9480520e77e2c7466f5e335\\scala3-tasty-inspector_3-3.1.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala3-compiler_3\\3.1.0\\5666f3d876db2b34a3c70dc1c377fbb56b7c3f03\\scala3-compiler_3-3.1.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala3-sbt-bridge\\3.1.0\\c2313ea18600e93c0ba415e52304b9d42125bc7f\\scala3-sbt-bridge-3.1.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala3-interfaces\\3.1.0\\e0f6a2122e687314d7601ae4ce08a0075d073306\\scala3-interfaces-3.1.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\tasty-core_3\\3.1.0\\b4bdeb64cef40d6e35cc39d758ff11796da8d91f\\tasty-core_3-3.1.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala3-library_3\\3.1.0\\c04dbffc2e8eb159dcc31e9db3fb2618de13cf0d\\scala3-library_3-3.1.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang.modules\\scala-asm\\9.1.0-scala-1\\90aaa7fb03763340aedabe0caddda89e46d7842c\\scala-asm-9.1.0-scala-1.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-sbt\\compiler-interface\\1.3.5\\1f7379ff56b1795b523838cd06ff24272104c380\\compiler-interface-1.3.5.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.jline\\jline-reader\\3.19.0\\645d72953711ee4e61705bc5e576fdd1f22c087\\jline-reader-3.19.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.jline\\jline-terminal-jna\\3.19.0\\c9f9071612424157ca3d5a774a42f2c9b44c10ef\\jline-terminal-jna-3.19.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.jline\\jline-terminal\\3.19.0\\d4a75a8be7490c8529c029d6baa59e838f45f22e\\jline-terminal-3.19.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-html-parser\\0.42.12\\b38f21a54c0ff7382bceb0f9eb8e75ec577692de\\flexmark-html-parser-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-anchorlink\\0.42.12\\afe70dca51a56e11223fef50e2cc341575d61553\\flexmark-ext-anchorlink-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-autolink\\0.42.12\\2ab3a1f43ab2085dc91d43215911979277f6f59b\\flexmark-ext-autolink-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-emoji\\0.42.12\\f0af5fc53c79f63e03c2d49f79550ee486999bb3\\flexmark-ext-emoji-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-jira-converter\\0.42.12\\5d5ded184937a872bf0be65418785be55ba52df5\\flexmark-jira-converter-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-gfm-strikethrough\\0.42.12\\7d74e9e5f0af7cd3450d8c5cc6a0091ca4e3889e\\flexmark-ext-gfm-strikethrough-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-gfm-tables\\0.42.12\\f5240d6c0cf545c043c4ff85d9901b16d63b2e5f\\flexmark-ext-gfm-tables-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-gfm-tasklist\\0.42.12\\bdc5f0b4eaeb518433105c7be7da0c36e8bc7ad1\\flexmark-ext-gfm-tasklist-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-wikilink\\0.42.12\\4925281a6b0ecd85abf1ec69b24a66ab7fe8fc13\\flexmark-ext-wikilink-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-yaml-front-matter\\0.42.12\\1d1dc4fc06640b822f5d494fedc50f9084bcb4cb\\flexmark-ext-yaml-front-matter-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-tables\\0.42.12\\1c7b0753b89929839e174623b572a5fe5a5d4f4b\\flexmark-ext-tables-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-ins\\0.42.12\\757ece03a334461467eecc53a5a444e8229e4ae6\\flexmark-ext-ins-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-ext-superscript\\0.42.12\\931585a8a1b984c7a9c516c133503231178fcd0d\\flexmark-ext-superscript-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-formatter\\0.42.12\\4e59a7db95b222ea7b3d9232538225e13fd49361\\flexmark-formatter-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark\\0.42.12\\154f847d06d0b153d670a9a9bd78d0d573b24af3\\flexmark-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\nl.big-o\\liqp\\0.6.7\\25981e683f3d169376da97dcf5e29914ffe04f75\\liqp-0.6.7.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.jsoup\\jsoup\\1.13.1\\f9577f3732bb7caa4fee8aba5053158f4010c118\\jsoup-1.13.1.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.dataformat\\jackson-dataformat-yaml\\2.9.8\\a1c807329eb0c75976aeb5961a506b3516ffeae3\\jackson-dataformat-yaml-2.9.8.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-library\\2.13.6\\ed7a2f528c7389ea65746c22a01031613d98ab3d\\scala-library-2.13.6.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.google.protobuf\\protobuf-java\\3.7.0\\dbb5e9230a91f2a6d011096c2b9c10a5a6e5f7f2\\protobuf-java-3.7.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-sbt\\util-interface\\1.3.0\\edc7556e112da142bf7e9ead1440d024fd3314c4\\util-interface-1.3.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\net.java.dev.jna\\jna\\5.3.1\\6eb9d07456c56b9c2560722e90382252f0f98405\\jna-5.3.1.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.vladsch.flexmark\\flexmark-util\\0.42.12\\d138401b9ab2a32f15f48705257bef18baeab5d5\\flexmark-util-0.42.12.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.nibor.autolink\\autolink\\0.6.0\\3986d016a14e8c81afeec752f19af29b20e8367b\\autolink-0.6.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.antlr\\antlr\\3.5.1\\241595653f0567bc615b2667c4ef9187e2365043\\antlr-3.5.1.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-databind\\2.2.3\\3ae380888029daefb91d3ecdca3a37d8cb92bc9\\jackson-databind-2.2.3.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-annotations\\2.2.3\\527fece4f23a457070a36c371a26d6c0208e1c3\\jackson-annotations-2.2.3.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-core\\2.9.8\\f5a654e4675769c716e5b387830d19b501ca191\\jackson-core-2.9.8.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.yaml\\snakeyaml\\1.23\\ec62d74fe50689c28c0ff5b35d3aebcaa8b5be68\\snakeyaml-1.23.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.antlr\\ST4\\4.0.7\\c013c5d7365477500eee744b65257c72f06e5ee\\ST4-4.0.7.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.antlr\\antlr-runtime\\3.5.1\\687cc3df4cf76f7161f83a64a3e8187e3ce9d022\\antlr-runtime-3.5.1.jar"
+            ],
+            "setup": {
+                "order": "java->scala",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                "-source",
+                "17",
+                "-target",
+                "17",
+                "-h",
+                "C:\\msys64\\home\\Bert\\projects\\scala-gradle-example\\build\\generated\\sources\\headers\\java\\main",
+                "-g",
+                "-sourcepath",
+                "",
+                "-proc:none",
+                "-XDuseUnsharedTable=true"
+            ]
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "C:\\Program Files\\Java\\jdk-17.0.1",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                "scala.gradle.example.App"
+            ],
+            "classpath": [
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala3-library_3\\3.1.0\\c04dbffc2e8eb159dcc31e9db3fb2618de13cf0d\\scala3-library_3-3.1.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-lang-scala_2.13\\4.2.0-SNAPSHOT\\560492e1129fd6d4e3d9e0c377dcf664348e255e\\vertx-lang-scala_2.13-4.2.0-SNAPSHOT.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-web\\4.2.1\\7cd609a82fcb761c56f9991c17f2136ba01d0f2f\\vertx-web-4.2.1.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-web-common\\4.2.1\\ba45de6049914741bbcf8eb41c205f7904fd8441\\vertx-web-common-4.2.1.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-auth-common\\4.2.1\\bc2a717e29d9dc521f64f066a2508caaa22c12a7\\vertx-auth-common-4.2.1.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-bridge-common\\4.2.1\\fff4e6d13a70bf9f11566a494b0f8be6b1c45c93\\vertx-bridge-common-4.2.1.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-core\\4.2.1\\ac96fe7ea3a2c0d4d1a0b1d9fe8922e0668d655\\vertx-core-4.2.1.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-databind\\2.13.0\\889672a1721d6d85b2834fcd29d3fda92c8c8891\\jackson-databind-2.13.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-core\\2.13.0\\e957ec5442966e69cef543927bdc80e5426968bb\\jackson-core-2.13.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-annotations\\2.13.0\\15be89db6609bd6fda3dc309bacf0318a312c03f\\jackson-annotations-2.13.0.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-reflect\\2.13.6\\bb523e56c63746a5752dece28fcd702c54fd3a11\\scala-reflect-2.13.6.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-library\\2.13.6\\ed7a2f528c7389ea65746c22a01031613d98ab3d\\scala-library-2.13.6.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler-proxy\\4.1.69.Final\\a3f0750489895740ffbf934504c8a5d86aa75ed3\\netty-handler-proxy-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http2\\4.1.69.Final\\cfd4423c9d19683a6bf37e235830e73ec2f75ec1\\netty-codec-http2-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http\\4.1.69.Final\\702c6104a716ca9dc8eec6f4459733fdfcbe1959\\netty-codec-http-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver-dns\\4.1.69.Final\\a70c5df588cdafda8974db53de3e6eece164d99f\\netty-resolver-dns-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler\\4.1.69.Final\\73e932059ce8881094cedcfe4a92b8391ffa7b1b\\netty-handler-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-socks\\4.1.69.Final\\d09453d168d4b941ae5e1fd0a68f64fb425ba592\\netty-codec-socks-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-dns\\4.1.69.Final\\b232161d2077733086d5a9f496bc6b89563c46f6\\netty-codec-dns-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec\\4.1.69.Final\\617ecaee8bcb3874234e8c0832843ebbc9e9dcc9\\netty-codec-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport\\4.1.69.Final\\228e5318012edb93138005ebe896b5dd91d4b47d\\netty-transport-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-buffer\\4.1.69.Final\\c87da90e422b331ecd1e157ca77e5300348b6d0d\\netty-buffer-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver\\4.1.69.Final\\d4e7b1b8c1e5aeaf41877906b90762f1e0151902\\netty-resolver-4.1.69.Final.jar",
+                "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-common\\4.1.69.Final\\810e0649787c4930a8e699d68eb8519df2560dd0\\netty-common-4.1.69.Final.jar"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalactic\\scalactic_2.13\\3.2.9\\c089b3d0d8436423fd7a22ccf51de2dd448c8914\\scalactic_2.13-3.2.9-sources.jar"
+                        },
+                        {
+                            "name": "scalactic_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalactic\\scalactic_2.13\\3.2.9\\2bf4d2f3176b7ac9a283c1153b51c792cb373814\\scalactic_2.13-3.2.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "junit",
+                    "name": "junit",
+                    "version": "4.13.2",
+                    "artifacts": [
+                        {
+                            "name": "junit",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\junit\\junit\\4.13.2\\33987872a811fe4d4001ed494b07854822257f42\\junit-4.13.2-sources.jar"
+                        },
+                        {
+                            "name": "junit",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\junit\\junit\\4.13.2\\8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12\\junit-4.13.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-mustmatchers_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-mustmatchers_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-mustmatchers_2.13\\3.2.9\\17084a076698bc91ab48a291df72e091a9634947\\scalatest-mustmatchers_2.13-3.2.9-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-mustmatchers_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-mustmatchers_2.13\\3.2.9\\a3270383806bf8ad8094d737b3c074c0201e25c9\\scalatest-mustmatchers_2.13-3.2.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala3-library_3",
+                    "version": "3.1.0",
+                    "artifacts": [
+                        {
+                            "name": "scala3-library_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala3-library_3\\3.1.0\\cafdbdcfe6c59fc93b974e517d69cbddabb806d3\\scala3-library_3-3.1.0-sources.jar"
+                        },
+                        {
+                            "name": "scala3-library_3",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala3-library_3\\3.1.0\\c04dbffc2e8eb159dcc31e9db3fb2618de13cf0d\\scala3-library_3-3.1.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.6",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-library\\2.13.6\\ed7a2f528c7389ea65746c22a01031613d98ab3d\\scala-library-2.13.6.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-library\\2.13.6\\676a27724b92adf5e0080b3c75b7ba8dd0a0db71\\scala-library-2.13.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatestplus",
+                    "name": "junit-4-13_2.13",
+                    "version": "3.2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-4-13_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatestplus\\junit-4-13_2.13\\3.2.2.0\\d667a1de3e392682978823404573b7a28cdaf215\\junit-4-13_2.13-3.2.2.0-sources.jar"
+                        },
+                        {
+                            "name": "junit-4-13_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatestplus\\junit-4-13_2.13\\3.2.2.0\\75fd94bb9272ec7023409cb80547ff5ea9bb813d\\junit-4-13_2.13-3.2.2.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-diagrams_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-diagrams_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-diagrams_2.13\\3.2.9\\d2662c109835b6075460ee6ad5fd72278455492a\\scalatest-diagrams_2.13-3.2.9.jar"
+                        },
+                        {
+                            "name": "scalatest-diagrams_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-diagrams_2.13\\3.2.9\\99c3dad4d3e1b486c2fcad5210bfb0c2dff24deb\\scalatest-diagrams_2.13-3.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.vertx",
+                    "name": "vertx-bridge-common",
+                    "version": "4.2.1",
+                    "artifacts": [
+                        {
+                            "name": "vertx-bridge-common",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-bridge-common\\4.2.1\\fff4e6d13a70bf9f11566a494b0f8be6b1c45c93\\vertx-bridge-common-4.2.1.jar"
+                        },
+                        {
+                            "name": "vertx-bridge-common",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-bridge-common\\4.2.1\\8ff95a012d613d37eb00cf4a0c707e99372f2e5c\\vertx-bridge-common-4.2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.13.0",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-core\\2.13.0\\e957ec5442966e69cef543927bdc80e5426968bb\\jackson-core-2.13.0.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-core\\2.13.0\\26783a31fe3e4b63f2799dda9266747d0621ffc6\\jackson-core-2.13.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-shouldmatchers_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-shouldmatchers_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-shouldmatchers_2.13\\3.2.9\\15f538217a0930508464cb54e29e23ce0dbcf3de\\scalatest-shouldmatchers_2.13-3.2.9.jar"
+                        },
+                        {
+                            "name": "scalatest-shouldmatchers_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-shouldmatchers_2.13\\3.2.9\\5dc914c888d41eabf54ed4cd21bebc4889a49d3e\\scalatest-shouldmatchers_2.13-3.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver\\4.1.69.Final\\bafb6c85c5815b71ebcf3dcd67fc615531df8a2c\\netty-resolver-4.1.69.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-resolver",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver\\4.1.69.Final\\d4e7b1b8c1e5aeaf41877906b90762f1e0151902\\netty-resolver-4.1.69.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.vertx",
+                    "name": "vertx-web-common",
+                    "version": "4.2.1",
+                    "artifacts": [
+                        {
+                            "name": "vertx-web-common",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-web-common\\4.2.1\\40e0bd14710afdb87bf60dd63770f99787489ca4\\vertx-web-common-4.2.1-sources.jar"
+                        },
+                        {
+                            "name": "vertx-web-common",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-web-common\\4.2.1\\ba45de6049914741bbcf8eb41c205f7904fd8441\\vertx-web-common-4.2.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.vertx",
+                    "name": "vertx-lang-scala_2.13",
+                    "version": "4.2.0-SNAPSHOT",
+                    "artifacts": [
+                        {
+                            "name": "vertx-lang-scala_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-lang-scala_2.13\\4.2.0-SNAPSHOT\\560492e1129fd6d4e3d9e0c377dcf664348e255e\\vertx-lang-scala_2.13-4.2.0-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "vertx-lang-scala_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-lang-scala_2.13\\4.2.0-SNAPSHOT\\ce90d5b3bc0a8105468e15e5bf7d0bb1271e3e94\\vertx-lang-scala_2.13-4.2.0-SNAPSHOT-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-buffer",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-buffer",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-buffer\\4.1.69.Final\\bcaafe096032a16e1f92bd81688a3c9977023c3b\\netty-buffer-4.1.69.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-buffer",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-buffer\\4.1.69.Final\\c87da90e422b331ecd1e157ca77e5300348b6d0d\\netty-buffer-4.1.69.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funsuite_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funsuite_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-funsuite_2.13\\3.2.9\\37e0d60cee161e28a0b70fe761f8fcc20b28a6e5\\scalatest-funsuite_2.13-3.2.9.jar"
+                        },
+                        {
+                            "name": "scalatest-funsuite_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-funsuite_2.13\\3.2.9\\393066c0a3f3d82ca913c6040d9a90c80f14bcbc\\scalatest-funsuite_2.13-3.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http2",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http2",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http2\\4.1.69.Final\\cfd4423c9d19683a6bf37e235830e73ec2f75ec1\\netty-codec-http2-4.1.69.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http2",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http2\\4.1.69.Final\\6d2828aad1dd0fc87d941d2e58540df5dec22f84\\netty-codec-http2-4.1.69.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-featurespec_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-featurespec_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-featurespec_2.13\\3.2.9\\c8a8f306f94fadcf232c5260d10b83402513881a\\scalatest-featurespec_2.13-3.2.9-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-featurespec_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-featurespec_2.13\\3.2.9\\c0e096afee8c2ad40abc014bfd9860534c5cf117\\scalatest-featurespec_2.13-3.2.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.vertx",
+                    "name": "vertx-auth-common",
+                    "version": "4.2.1",
+                    "artifacts": [
+                        {
+                            "name": "vertx-auth-common",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-auth-common\\4.2.1\\bc2a717e29d9dc521f64f066a2508caaa22c12a7\\vertx-auth-common-4.2.1.jar"
+                        },
+                        {
+                            "name": "vertx-auth-common",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-auth-common\\4.2.1\\a5ce3fbe92fa324615edbb84240d86b13609323f\\vertx-auth-common-4.2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.13",
+                    "version": "1.3.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang.modules\\scala-xml_2.13\\1.3.0\\39799f29a707e37bd6a666c21c4411c0b881da62\\scala-xml_2.13-1.3.0-sources.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang.modules\\scala-xml_2.13\\1.3.0\\1db2b0fb6f454a9d34971b47158ee9dbe85d4eca\\scala-xml_2.13-1.3.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-socks",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-socks",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-socks\\4.1.69.Final\\2dc5d5a6e539ce2191b31f4b693fee40aec6f204\\netty-codec-socks-4.1.69.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-codec-socks",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-socks\\4.1.69.Final\\d09453d168d4b941ae5e1fd0a68f64fb425ba592\\netty-codec-socks-4.1.69.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler-proxy",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler-proxy",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler-proxy\\4.1.69.Final\\58d6a371cf7c0feb61e4689c1ce03695db37b90f\\netty-handler-proxy-4.1.69.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-handler-proxy",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler-proxy\\4.1.69.Final\\a3f0750489895740ffbf934504c8a5d86aa75ed3\\netty-handler-proxy-4.1.69.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport\\4.1.69.Final\\228e5318012edb93138005ebe896b5dd91d4b47d\\netty-transport-4.1.69.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport\\4.1.69.Final\\9f168a7e7aa50f911335c935fc509bf67e5e6f32\\netty-transport-4.1.69.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.vertx",
+                    "name": "vertx-web",
+                    "version": "4.2.1",
+                    "artifacts": [
+                        {
+                            "name": "vertx-web",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-web\\4.2.1\\7cd609a82fcb761c56f9991c17f2136ba01d0f2f\\vertx-web-4.2.1.jar"
+                        },
+                        {
+                            "name": "vertx-web",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-web\\4.2.1\\9598965322625b11c4f72278efabd81bbee495e3\\vertx-web-4.2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-compatible\\3.2.9\\c7378594161a6a559bd5992f9b961eed9277d7ff\\scalatest-compatible-3.2.9.jar"
+                        },
+                        {
+                            "name": "scalatest-compatible",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-compatible\\3.2.9\\7d3a5de68aba60b4c0476ea318d0623778ad2297\\scalatest-compatible-3.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-matchers-core_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-matchers-core_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-matchers-core_2.13\\3.2.9\\86f9aae3c551a7129eb094796367705e0cdcde0f\\scalatest-matchers-core_2.13-3.2.9-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-matchers-core_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-matchers-core_2.13\\3.2.9\\4457e954c41fa7b44278c36d3510611c624996a9\\scalatest-matchers-core_2.13-3.2.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-common",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-common",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-common\\4.1.69.Final\\e892af0618fb65690efe8ea31be545cf6ffd13c5\\netty-common-4.1.69.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-common",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-common\\4.1.69.Final\\810e0649787c4930a8e699d68eb8519df2560dd0\\netty-common-4.1.69.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-dns",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-dns",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-dns\\4.1.69.Final\\b232161d2077733086d5a9f496bc6b89563c46f6\\netty-codec-dns-4.1.69.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-dns",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-dns\\4.1.69.Final\\c765f8ece314a4b0786d8fb6b15d9e7fd83310cb\\netty-codec-dns-4.1.69.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.13.0",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-databind\\2.13.0\\889672a1721d6d85b2834fcd29d3fda92c8c8891\\jackson-databind-2.13.0.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-databind\\2.13.0\\531874ca0491bcdee13bc6a4f0fa201d8067366c\\jackson-databind-2.13.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-flatspec_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-flatspec_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-flatspec_2.13\\3.2.9\\dbeee99d8317e2b1d30ed592c727561865d0d5a6\\scalatest-flatspec_2.13-3.2.9-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-flatspec_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-flatspec_2.13\\3.2.9\\1d79ccdde578c7d90ea4938a3b7bafaac22130e7\\scalatest-flatspec_2.13-3.2.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.6",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-reflect\\2.13.6\\bb523e56c63746a5752dece28fcd702c54fd3a11\\scala-reflect-2.13.6.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scala-lang\\scala-reflect\\2.13.6\\c2015b32e85962fcad12d361ee1f2876f03edfa6\\scala-reflect-2.13.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler\\4.1.69.Final\\73e932059ce8881094cedcfe4a92b8391ffa7b1b\\netty-handler-4.1.69.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler\\4.1.69.Final\\a46cde50fa8975261378c1ee1167b3a47f0afc45\\netty-handler-4.1.69.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-propspec_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-propspec_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-propspec_2.13\\3.2.9\\ba15f6ad236d4b8bc5641bb516f19348de3309d1\\scalatest-propspec_2.13-3.2.9-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-propspec_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-propspec_2.13\\3.2.9\\eafaf4b0058fdd81e2adca0b4bb37e1bffa8a0a3\\scalatest-propspec_2.13-3.2.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funspec_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funspec_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-funspec_2.13\\3.2.9\\ca67377903be97c25d306d264ecac9321acfb92\\scalatest-funspec_2.13-3.2.9.jar"
+                        },
+                        {
+                            "name": "scalatest-funspec_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-funspec_2.13\\3.2.9\\b6d14a2524fb955c7afd43ef6c8d8c10ef89fbbc\\scalatest-funspec_2.13-3.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-freespec_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-freespec_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-freespec_2.13\\3.2.9\\558c6e981f3ad452e765f946b768c10e94a1d2a6\\scalatest-freespec_2.13-3.2.9.jar"
+                        },
+                        {
+                            "name": "scalatest-freespec_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-freespec_2.13\\3.2.9\\a82a9fcbd6449ca9d327b0b3af389c534e77ee8c\\scalatest-freespec_2.13-3.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver-dns",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver-dns",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver-dns\\4.1.69.Final\\a70c5df588cdafda8974db53de3e6eece164d99f\\netty-resolver-dns-4.1.69.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver-dns",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver-dns\\4.1.69.Final\\a2120a8afa2bab191e934b4e6656fbd329de9c38\\netty-resolver-dns-4.1.69.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest_2.13\\3.2.9\\9fbd87556a38dee844956bac527cade00488f6ce\\scalatest_2.13-3.2.9-sources.jar"
+                        },
+                        {
+                            "name": "scalatest_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest_2.13\\3.2.9\\e58e048b7f14929f1033f33ae9cbbd9e6d0c3782\\scalatest_2.13-3.2.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hamcrest",
+                    "name": "hamcrest-core",
+                    "version": "1.3",
+                    "artifacts": [
+                        {
+                            "name": "hamcrest-core",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.hamcrest\\hamcrest-core\\1.3\\42a25dc3219429f0e5d060061f71acb49bf010a0\\hamcrest-core-1.3.jar"
+                        },
+                        {
+                            "name": "hamcrest-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.hamcrest\\hamcrest-core\\1.3\\1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b\\hamcrest-core-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-refspec_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-refspec_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-refspec_2.13\\3.2.9\\cef5a84cb7848c271f88dcb6c7f288739bf26fb9\\scalatest-refspec_2.13-3.2.9.jar"
+                        },
+                        {
+                            "name": "scalatest-refspec_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-refspec_2.13\\3.2.9\\10fbe649b9f47182c1bc8151529447e2b1a44cd1\\scalatest-refspec_2.13-3.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-wordspec_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-wordspec_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-wordspec_2.13\\3.2.9\\a79ec1d2079f8d194288e9f5adb4c6c973d6f2f3\\scalatest-wordspec_2.13-3.2.9-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-wordspec_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-wordspec_2.13\\3.2.9\\9f9ef553a9a4de7cb4c1d172ad850d7a63553bc7\\scalatest-wordspec_2.13-3.2.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec\\4.1.69.Final\\17541bc4ca7d4b63faa81c9d358a34ffc0de8ad7\\netty-codec-4.1.69.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-codec",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec\\4.1.69.Final\\617ecaee8bcb3874234e8c0832843ebbc9e9dcc9\\netty-codec-4.1.69.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-core_2.13",
+                    "version": "3.2.9",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-core_2.13",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-core_2.13\\3.2.9\\350a403eda29bdccf891accba57b6f21ec03740e\\scalatest-core_2.13-3.2.9.jar"
+                        },
+                        {
+                            "name": "scalatest-core_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\org.scalatest\\scalatest-core_2.13\\3.2.9\\bf64e4bb2afea8bf4be96eb785a4f8179c661c93\\scalatest-core_2.13-3.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.vertx",
+                    "name": "vertx-core",
+                    "version": "4.2.1",
+                    "artifacts": [
+                        {
+                            "name": "vertx-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-core\\4.2.1\\b2237967eb2f8fb71727fc4b263657f9988e86de\\vertx-core-4.2.1-sources.jar"
+                        },
+                        {
+                            "name": "vertx-core",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.vertx\\vertx-core\\4.2.1\\ac96fe7ea3a2c0d4d1a0b1d9fe8922e0668d655\\vertx-core-4.2.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http",
+                    "version": "4.1.69.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http\\4.1.69.Final\\702c6104a716ca9dc8eec6f4459733fdfcbe1959\\netty-codec-http-4.1.69.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http\\4.1.69.Final\\24b404d19be05dbd3b8900364ea982b526c5e2e6\\netty-codec-http-4.1.69.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.13.0",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-annotations\\2.13.0\\15be89db6609bd6fda3dc309bacf0318a312c03f\\jackson-annotations-2.13.0.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Bert\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-annotations\\2.13.0\\1c78424885821d9d76dea840373e4c6ec3194bfb\\jackson-annotations-2.13.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
