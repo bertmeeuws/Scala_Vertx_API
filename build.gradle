@@ -27,6 +27,7 @@ repositories {
     maven {
     url "https://s01.oss.sonatype.org/content/repositories/snapshots"
   }
+
 }
 
 dependencies {
@@ -36,10 +37,13 @@ dependencies {
     implementation "io.vertx:vertx-lang-scala_2.13:4.2.0-SNAPSHOT"
     implementation 'io.vertx:vertx-core:4.2.1'
     implementation 'io.vertx:vertx-web:4.2.1'
+    implementation 'io.vertx:vertx-mysql-client:4.2.2'
 
     implementation platform("com.fasterxml.jackson:jackson-bom:$jacksonVersion")
     implementation 'com.fasterxml.jackson.core:jackson-core'
     implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.module:jackson-module-scala_3:2.13.0'
+
 
 
     // Use Scalatest for testing our library
