@@ -22,6 +22,9 @@ import io.vertx.core.http.HttpServerResponse
 import io.vertx.core.json.JsonObject
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import scala.gradle.example.routes.UserRoutes
+import scala.gradle.example.routes.AuthRoutes
+import scala.db.mySqlClient
+import scala.services.authenticationService
 
 val PORT = 8000
 
@@ -30,22 +33,59 @@ case class Perfume(id: Int, name: String, description: String)
 class HttpVerticle extends ScalaVerticle {
   override def start(promise: Promise[Unit]): Unit = {
     // Create a router
-
     val app: Router = Router.router(vertx)
-    app.mountSubRouter("/api", UserRoutes.mkRoutes(app))
-
-    val connectOptions =
-      MySQLConnectOptions(port = 3306, host = "localhost", database = "perfume", user = "root", password = "root")
-
-    val poolOptions = PoolOptions(5)
-
-    val client = MySQLPool.pool(vertx, connectOptions, poolOptions);
-    // Sets up JSON parsing
     app.route().handler(BodyHandler.create)
+    app.mountSubRouter("/api/users", UserRoutes.mkRoutes(app, vertx))
+    app.mountSubRouter("/api/auth", AuthRoutes.mkRoutes(app, vertx))
+
+    val client = mySqlClient.initalizeClient(vertx)
+    // app.route().handler(BodyHandler.create)
 
     app
       .get("/hello")
       .handler(ctx => ctx.response.end("world"))
+
+    app
+      .post("/login")
+      .handler(ctx => {
+        val body     = ctx.getBodyAsJson
+        val username = body.getString("username")
+        val password = body.getString("password")
+
+        val token = authenticationService.login(username, password)
+
+        ctx
+          .response()
+          .putHeader("content-type", "application/json")
+          .setStatusCode(200)
+          .end(token)
+      })
+
+    app
+      .get("/authenticate")
+      .handler(ctx => {
+        println(ctx)
+
+        val req        = ctx.request();
+        val authHeader = req.getHeader("Authorization")
+
+        if (authHeader.startsWith("Bearer ")) {
+          // val token = authenticationService.authenticate("")
+          val token = authHeader.substring(7, authHeader.length)
+          val yes   = authenticationService.authenticate(token)
+          ctx
+            .response()
+            .setStatusCode(200)
+            .end(token)
+        }
+
+        println(authHeader)
+        // val token = authenticationService.authenticate("")
+
+        ctx
+          .response()
+          .setStatusCode(401)
+      })
 
     app
       .post("/send-json")

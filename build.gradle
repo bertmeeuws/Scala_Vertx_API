@@ -41,8 +41,17 @@ dependencies {
 
     implementation platform("com.fasterxml.jackson:jackson-bom:$jacksonVersion")
     implementation 'com.fasterxml.jackson.core:jackson-core'
+    implementation "io.vertx:vertx-auth-common:$vertxVersion"
+    implementation "io.vertx:vertx-auth-jwt:$vertxVersion"
+    implementation 'joda-time:joda-time:2.10.13'
+
+
+
     implementation 'com.fasterxml.jackson.core:jackson-databind'
     implementation 'com.fasterxml.jackson.module:jackson-module-scala_3:2.13.0'
+
+    implementation 'org.mindrot:jbcrypt:0.4'
+
 
 
 
