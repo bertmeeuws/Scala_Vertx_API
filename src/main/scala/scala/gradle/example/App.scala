@@ -19,12 +19,15 @@ import collection.convert.ImplicitConversions._
 import io.vertx.lang.scala.json.Json
 import com.fasterxml.jackson.databind.ObjectMapper
 import io.vertx.core.http.HttpServerResponse
-import io.vertx.core.json.JsonObject
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import scala.gradle.example.routes.UserRoutes
 import scala.gradle.example.routes.AuthRoutes
 import scala.db.mySqlClient
 import scala.services.authenticationService
+import io.vertx.scala.core.JsonObject
+import io.vertx.ext.web.handler.CorsHandler
+import io.vertx.ext.web.handler.JWTAuthHandler
+import scala.config._
 
 val PORT = 8000
 
@@ -34,59 +37,69 @@ class HttpVerticle extends ScalaVerticle {
   override def start(promise: Promise[Unit]): Unit = {
     // Create a router
     val app: Router = Router.router(vertx)
+    app
+      .route()
+      .handler(
+        CorsHandler
+          .create(".*.")
+          .allowedMethod(io.vertx.core.http.HttpMethod.GET)
+          .allowedMethod(io.vertx.core.http.HttpMethod.POST)
+          .allowedMethod(io.vertx.core.http.HttpMethod.DELETE)
+          .allowedMethod(io.vertx.core.http.HttpMethod.OPTIONS)
+          .allowCredentials(true)
+          .allowedHeader("Access-Control-Request-Method")
+          .allowedHeader("Access-Control-Allow-Credentials")
+          .allowedHeader("Access-Control-Allow-Origin")
+          .allowedHeader("Access-Control-Allow-Headers")
+          .allowedHeader("Authorization")
+          .allowedHeader("Content-Type")
+      );
     app.route().handler(BodyHandler.create)
-    app.mountSubRouter("/api/users", UserRoutes.mkRoutes(app, vertx))
-    app.mountSubRouter("/api/auth", AuthRoutes.mkRoutes(app, vertx))
+    app.mountSubRouter("/api/auth", AuthRoutes.mkRoutes(vertx))
+    app.mountSubRouter("/api/users", UserRoutes.mkRoutes(vertx))
+
+    // Setting up security
+
+    app.route("/").handler(JWTAuthHandler.create(jwt.provider));
 
     val client = mySqlClient.initalizeClient(vertx)
     // app.route().handler(BodyHandler.create)
-
     app
-      .get("/hello")
-      .handler(ctx => ctx.response.end("world"))
-
-    app
-      .post("/login")
+      .get("/")
       .handler(ctx => {
-        val body     = ctx.getBodyAsJson
-        val username = body.getString("username")
-        val password = body.getString("password")
+        // return
+        println("inside")
 
-        val token = authenticationService.login(username, password)
+        // println(ctx.user())val authHeader = ctx.request.getHeader("Authorization")
+        // Checking for JWT
 
-        ctx
-          .response()
-          .putHeader("content-type", "application/json")
-          .setStatusCode(200)
-          .end(token)
-      })
+        // Trying out the Auth handler
+        // println(ctx.user().principal())
 
-    app
-      .get("/authenticate")
-      .handler(ctx => {
-        println(ctx)
+        val authHeader = ctx.request.getHeader("Authorization")
 
-        val req        = ctx.request();
-        val authHeader = req.getHeader("Authorization")
-
+        val isAuthenticated = authHeader != null
+        println(isAuthenticated)
+        // println(authHeader)
         if (authHeader.startsWith("Bearer ")) {
-          // val token = authenticationService.authenticate("")
-          val token = authHeader.substring(7, authHeader.length)
-          val yes   = authenticationService.authenticate(token)
-          ctx
-            .response()
-            .setStatusCode(200)
-            .end(token)
+          val token = authHeader.substring(7, authHeader.length);
+
+          val authorise = for {
+            user <- authenticationService.authenticate(token, ctx)
+          } yield user.principal()
+
+          val sub = authorise
+            .map(_.getString("sub"))
+            .getOrElse({
+              return ctx.fail(401)
+            })
+          ctx.json(sub)
         }
 
-        println(authHeader)
-        // val token = authenticationService.authenticate("")
-
-        ctx
-          .response()
-          .setStatusCode(401)
+        ctx.json(JsonObject("Status" -> "OK"))
       })
 
+    /*
     app
       .post("/send-json")
       .handler(ctx => {
@@ -125,6 +138,7 @@ class HttpVerticle extends ScalaVerticle {
           }
         }
       })
+     */
 
     vertx
       .createHttpServer()

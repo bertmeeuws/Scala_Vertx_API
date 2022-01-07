@@ -9,7 +9,7 @@ object mySqlClient:
     val connectOptions =
       MySQLConnectOptions(port = 3306, host = "localhost", database = "perfume", user = "root", password = "root")
 
-    val poolOptions = PoolOptions(5)
+    val poolOptions = PoolOptions(10)
 
     val client: MySQLPool = MySQLPool.pool(vertx, connectOptions, poolOptions);
     client

@@ -15,27 +15,85 @@ import org.joda.time.format.DateTimeFormat
 import io.vertx.ext.web.handler.BodyHandler
 import io.vertx.scala.core.JsonObject
 import io.vertx.mysqlclient.MySQLClient
+import scala.services.userService
+import scala.concurrent.Await
+import scala.concurrent.duration.Duration
+import scala.concurrent.Future
+import scala.concurrent.ExecutionContext.Implicits.global
+import com.fasterxml.jackson.module.scala.util.PimpedType.UnwrapPimpedType
+import io.vertx.sqlclient.RowSet
+import io.vertx.sqlclient.Row
+import scala.util.Success
+import scala.util.Failure
+import scala.collection.JavaConverters._
+import io.vertx.core.json.JsonArray
+import scala.services.authenticationService
 
 object UserRoutes:
-  def mkRoutes(app: Router, vertx: Vertx): Router = {
+  def mkRoutes(vertx: Vertx): Router = {
 
     val client = mySqlClient.initalizeClient(vertx)
+
+    val objectMapper  = ObjectMapper()
+    val defaultMapper = objectMapper.registerModule(DefaultScalaModule)
+
+    val app = Router.router(vertx)
 
     app
       .get("/")
       .handler(ctx => {
-        ctx.response.end("hi")
+        // val id = ctx.pathParam("id")
+        val authHeader = ctx.request.getHeader("Authorization")
+        // Checking for JWT
+        if (authHeader.startsWith("Bearer ")) {
+          val token = authHeader.substring(7, authHeader.length);
+          println("Found token")
+          val jwt = for {
+            user    <- authenticationService.authenticate(token, ctx)
+            access  <- authenticationService.createJwtToken(user.principal.getString("username"), 15)
+            refresh <- authenticationService.createJwtToken(user.principal.getString("username"), 30)
+          } ctx.json(JsonObject("access" -> access, "refresh" -> refresh))
+        } else {
+          // Error
+        }
+
+        println("Inside get users")
+        val users: Seq[UserEntity] = userService.get_all_users(ctx)
+        val usersAsJson = JsonArray(
+          users.map(user =>
+            JsonObject(
+              "username" -> user.username,
+              "surname"  -> user.surname,
+              "name"     -> user.name
+            )
+          )
+        )
+        ctx.json(usersAsJson)
       })
+
+    /*
+    app
+      .get("/:id")
+      .handler(ctx => {
+        val id: Int = ctx.pathParam("id").toInt
+        val user    = userService.get_user_by_id(ctx, id)
+
+        ctx.json(
+          JsonObject(
+            "username" -> user.map(_.username),
+            "surname"  -> user.map(_.surname),
+            "name"     -> user.map(_.name)
+          )
+        )
+      })
+     */
 
     app
       .post("/")
       .produces("application/json")
       .handler(ctx => {
-        println("Inside register")
-        val objectMapper  = ObjectMapper()
-        val defaultMapper = objectMapper.registerModule(DefaultScalaModule)
-        val body          = ctx.getBodyAsJson
-
+        println("Inside insert user")
+        val body     = ctx.getBodyAsJson
         val password = body.getString("password")
         val username = body.getString("username")
         val surname  = body.getString("surname")
@@ -43,50 +101,23 @@ object UserRoutes:
 
         val passwordHash = BCrypt.hashpw(password, BCrypt.gensalt());
 
-        println(passwordHash)
+        val insertedUser = for {
+          id: Long <- userService.insert_user_one(username, passwordHash, name, surname, ctx)
+          user     <- userService.get_user_by_id(ctx, id.toInt)
+          access   <- authenticationService.createJwtToken(user.username, 15)
+          refresh  <- authenticationService.createJwtToken(user.username, 30)
+        } yield JsonObject(
+          "username" -> user.username,
+          "surname"  -> user.surname,
+          "name"     -> user.name,
+          "access"   -> access,
+          "refresh"  -> refresh
+        )
 
-        client
-          .preparedQuery(
-            "INSERT INTO users (username, password, name, surname, created_at) VALUES (?, ?, ?, ?, ?)"
-          )
-          .execute(
-            Tuple.of(username, passwordHash, name, surname, DateTime()),
-            ar => {
-              if (ar.succeeded()) {
-                val rows         = ar.result()
-                val lastInsertId = rows.property(MySQLClient.LAST_INSERTED_ID);
+        println(insertedUser.getOrElse(ctx.fail(404)))
 
-                ctx
-                  .response()
-                  .setStatusCode(200)
-                  .putHeader("content-type", "application/json")
-                  .end(JsonObject("status" -> "OK", "user_id" -> lastInsertId).toBuffer())
+        ctx.json(insertedUser.getOrElse(ctx.fail(404)))
 
-                println(ar.result())
-
-                val user: UserEntity = UserEntity(
-                  username = rows.head.getString("id"),
-                  password = rows.head.getString("password"),
-                  name = rows.head.getString("name"),
-                  surname = rows.head.getString("surname"),
-                  createdAt =
-                    DateTime.parse(rows.head.getString("created_at"), DateTimeFormat.forPattern("dd/MM/yyyy HH:mm:ss"))
-                )
-
-                val strUser = defaultMapper.writeValueAsString(user)
-                println(strUser)
-
-                ctx
-                  .response()
-                  .putHeader("content-type", "application/json")
-                  .setStatusCode(200)
-                  .end(strUser)
-              } else {
-                println("Failure: " + ar.cause().getMessage());
-                ctx.response.end("Something went wong")
-              }
-            }
-          )
       })
 
     app
